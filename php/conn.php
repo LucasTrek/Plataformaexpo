@@ -1,4 +1,8 @@
 <?php
-    $conexao=mysqli_connect("containers-us-west-139.railway.app","root","51ROb5Ab8nzzcxqOQoif","railway");
-    
+    $conexao=mysqli_connect("localhost","root","","bdexpo");
+
+    if (!$conexao) {
+        echo "Erro ao conectar ao banco de dados: " . mysqli_connect_error();
+        exit();
+    }
 ?>
