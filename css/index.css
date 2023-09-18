@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.titulos{
+    color: crimson;
+    text-align: center;
+}
+.item{
+    margin: 5px;
+    background-color: rgb(217, 176, 255);
+    text-align: left;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.coluna{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+    
+}
+.linha{
+    grid-template-rows: 100px;
+}
+
+section{
+    width: 800px;
+    margin: 0 auto;
+}
+.section-container {
+    margin-top: 100px;
+    
+}
+.Teste{
+    margin-left: 200px;
+}
