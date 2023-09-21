@@ -26,9 +26,9 @@ if(isset($_POST['usuario']) || isset($_POST['senha'])) {
             }
 
             $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['usuario'] = $usuario['usuario'];
 
-            header("Location: /Plataformaexpo/index.php");
+            header("Location: index.php");
 
         } else {
             echo "Falha ao logar! Usuário ou senha incorretos";
