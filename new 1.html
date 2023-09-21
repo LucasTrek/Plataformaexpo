@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Estudos - FORTEC</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 class="titulos">Teste</h1>
+
+    <div class="section-container">
+        <div class="Teste">
+            <h1>ENEM 2022</h1>
+        </div>
+		
+        <section class="coluna linha bscf">
+            <div class="item enem" id="item1" data-url="https://download.inep.gov.br/enem/provas_e_gabaritos/2022_PV_impresso_D1_CD1.pdf" onclick="redirectToPage(this)">
+			<img src="https://s3.us-east-2.amazonaws.com/saberemrede/profiles/profile_14393.png" class="img"><br>Prova Enem 2022
+			</div>
+            <div class="item enem" id="item1" data-url="https://download.inep.gov.br/enem/provas_e_gabaritos/2022_GB_impresso_D1_CD1.pdf" onclick="redirectToPage(this)">
+			<img src="https://s3.us-east-2.amazonaws.com/saberemrede/profiles/profile_14393.png" class="img"><br>Gabarito Enem 2022
+			</div>
+        </section>
+        <div class="Teste">
+            <h1>Vídeo Aulas</h1>
+        </div>
+        <section class="coluna linha bscf">
+            <div class="item">1</div>
+
+        </section>
+        <div class="Teste">
+            <h1>Olá mundo!</h1>
+        </div>
+        <section class="coluna linha bscf">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </section>
+    </div>  
+    
+
+    <script>
+        // Função para redirecionar o usuário com base no atributo "data-url"
+        function redirectToPage(element) {
+            var url = element.getAttribute('data-url');
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>
