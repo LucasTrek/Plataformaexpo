@@ -9,13 +9,18 @@ body{
     text-align: center;
 }
 .item{
+	
+	box-shadow: 6px 6px #3251f9;
 	height: 100px;
-	padding: 5px;
+	padding: 10px;
     margin: 5px;
     background-color: aliceblue;
     text-align: left;
     font-size: 20px;
     border-radius: 10px;
+	border-style: solid;
+	border-color: #09244b;
+	
 }
 
 .coluna{
@@ -24,17 +29,17 @@ body{
     
 }
 .linha{
-    grid-template-rows: 100px;
+	
 }
 
 section{
 	
     width: 1000px;
-    margin: 0 auto;
+    margin: auto;
 }
 .section-container {
-    margin-top: 100px;
-    
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .Teste{
     margin-left: 200px;
@@ -43,5 +48,29 @@ section{
 	width:  90px;
 	height: 90px:
 }
-.enem{
-display: flex;}
+.enema{
+display: flex;
+}
+.enemhr{
+	background-color: #09244b;
+	border-style: none;
+	opacity: 0.5;
+	margin: 10px;
+	width: 2px;
+}
+body h4{
+color: #3251f9;
+opacity: 0.7;
+display: table-cell;
+}
+body h1{
+	padding: 15px;
+	margin: auto;
+}
+.hr1{
+	
+	background-color: #3251f9;
+	height: 3px;
+	border-style: solid;
+	border-color: #3251f9;
+}
