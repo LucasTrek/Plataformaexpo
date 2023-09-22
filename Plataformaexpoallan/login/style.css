@@ -1,0 +1,19 @@
+body{
+        background-color: #1e90ff;
+        font-family: sans-serif;
+        }
+        .card{
+            width: 400px;
+            margin: auto;
+            padding: 40px;
+            text-align: left;
+            background-color: aliceblue;
+            border-radius: 20px;
+        }
+        .card-top{
+            font-size: 14px;
+        }
+        .mensagem-sucesso {
+            color: green;
+            font-weight: bold;
+        }
