@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Vina+Sans');
+@import url('https://fonts.googleapis.com/css?family=Space%20Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto%20Condensed');
+@import url('https://fonts.googleapis.com/css?family=Signika%20Negative');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Roboto Condensed";
+    color: rgb(0, 0, 0);
+}
+    
+
+body {
+    margin: 70px;
+    padding: 0;
+        background-color: #56a4ec; /* Cor de fundo azul (substitua pelo seu tom de azul preferido) */
+        
+    }
+
+nav {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100vw;
+    height: 8vh;
+    background-color: #e5e5e6; /* Azul escuro */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(231, 174, 174);
+}
+
+nav img {
+    width: 100px;
+}
+
+.logo {
+    font-family: 'Vina Sans';
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: rem;
+    font-family: 'Vina Sans';
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Vina Sans';
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list a {
+    font-family: 'Roboto Condensed';
+}
+
+.nav-list i {
+    font-size: 1.5em;  
+    color: white;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: white;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 999px) {
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background: #0d47a1; /* Azul escuro */
+        z-index: 100;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
