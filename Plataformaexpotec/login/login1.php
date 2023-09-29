@@ -36,7 +36,7 @@ if(isset($_POST['usuario']) || isset($_POST['senha']))
 
         .card {
             position: absolute;
-            top: 300px;
+            top: 200px;
             height: 355px;
             width: 400px;
             padding: 40px;
@@ -86,7 +86,9 @@ if(isset($_POST['usuario']) || isset($_POST['senha']))
 
         #img {
             position: absolute;
-            top: 50px;
+            top: 15px;
+			width: 220px;
+			height: 180px;
         }
 
         /* Estilos para o ícone de mostrar/ocultar senha */
@@ -94,8 +96,8 @@ if(isset($_POST['usuario']) || isset($_POST['senha']))
             cursor: pointer;
             font-size: 1.5em;
             position: absolute; /* Posicionamento absoluto */
-            top: 50%; /* Centralizado verticalmente */
-            left: -34px; /* Distância à esquerda do campo de senha */
+            top: 40px; /* Centralizado verticalmente */
+            left: 380px; /* Distância à esquerda do campo de senha */
             transform: translateY(-50%); /* Centralizado verticalmente */
         }
 
@@ -103,11 +105,12 @@ if(isset($_POST['usuario']) || isset($_POST['senha']))
         background-color: #007BFF; /* Cor de fundo azul */
         color: #fff; /* Cor do texto branco */
         border: solid;
-        position: absolute;
+        position: ;
             top: 340px;
-            height: vh; 
-            width: 400px;
+            height: 200; 
+            width: 250px;
             padding: 30px;
+			margin: auto;
         border-radius: 20px;
         font-size: 19px; /* Aumentar o tamanho da fonte */
         line-height: 0; /* Para manter o texto verticalmente centralizado */
@@ -154,8 +157,11 @@ if(isset($_POST['usuario']) || isset($_POST['senha']))
                 <input type="password" class="user" placeholder="Senha" name="senha" id="senha">
                 <span id="mostrar-senha" class="mostrar-senha" onclick="toggleSenha()">👁️</span>
             </div>
+
             <div class="card-group btn">
+			<center>
                 <input type="submit" value="Entrar" class="btn-login">
+			</center>
             </div>
         </form>
 
