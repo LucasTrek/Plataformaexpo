@@ -1,0 +1,50 @@
+<?php
+    include('../session.php');
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Plataforma de Estudos - FORTEC</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Incluindo o CSS do código 1 -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <style>
+        /* Qualquer estilo adicional específico para esta página pode ser adicionado aqui */
+    </style>
+    
+    <!-- Código do menu simplificado -->
+    <nav>
+        <ul class="nav-list">
+            <li><i class="bi bi-cart4"></i></li>
+            <li><a href="login.php"><i class="bi bi-box-arrow-in-right"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <div class="card-top">
+            <h1>------Login-------</h1><br>
+            <h4>Insira seus dados para entrar.</h4>
+        </div>
+        <form action="http://localhost/Plataformaexpo/login/logar.php" method="post">
+            <div class="card-group">
+                <label>Usuário:</label><input type="text" class="user" placeholder="Usuário" name="usuario"/><br>
+            </div>
+            <div class="card-group">
+                <label>Senha:</label><input type="text" class="user" placeholder="Senha" name="senha"/>
+            </div>
+            <div class="card-group btn">
+                <input type="submit" value="Entrar">
+            </div>
+        </form>
+        
+        <!-- Link para criar uma conta -->
+        <p>Não possui uma conta? <a href="http://localhost/Plataformaexpo/login/cadastro1.php">Crie uma agora!</a></p>
+    </div>
+</body>
+</html>
