@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+	background-color: #1e90ff;
+	font-family: sans-serif;
+}
+.titulos{
+    color: crimson;
+    text-align: center;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Adicione esta linha para evitar espaçamento vazio à direita */
+}
+
+.item{
+	
+	box-shadow: 6px 6px #3251f9;
+	height: 100px;
+	padding: 10px;
+    margin: 5px;
+    background-color: aliceblue;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 10px;
+	border-style: solid;
+	border-color: #09244b;
+	
+}
+
+.coluna{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+    
+}
+.linha{
+	
+}
+
+section{
+	
+    width: 1000px;
+    margin: auto;
+}
+.section-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.Teste{
+    margin-left: 200px;
+    color: #3251f9; /* Adicione a cor azul no texto #3251f9 */
+}
+.img{
+	width:  90px;
+	height: 90px:
+}
+.enema{
+display: flex;
+}
+.enemhr{
+	background-color: #09244b;
+	border-style: none;
+
+	margin: 10px;
+	width: 2px;
+}
+body h4{
+color: #3251f9;
+display: table-cell;
+}
+body h1{
+	padding: 15px;
+	margin: auto;
+}
+.hr1{
+	
+	background-color: #3251f9;
+	height: 3px;
+	border-style: solid;
+	border-color: #3251f9;
+}
+.Teste1{
+    margin-top: 70px;
+    margin-left: 200px;
+    color: #3251f9; /* Adicione a cor azul no texto #3251f9 */
+}
+@media(max-width: 999px){
+	body {
+        overflow-x: hidden; /* Adicionado para evitar espaçamento vazio à direita */
+    }
+
+    .Teste1{
+        margin-top: 2vh;
+        margin-left: 10vw;
+        text-align: center; /* Adicionado para centralizar o texto */
+    }
+    .Teste{
+        margin-left: 10vw;
+        font-size: 4vh;
+        text-align: center; /* Adicionado para centralizar o texto */
+    }
+    .coluna{
+        display: block;
+        text-align: center; /* Adicionado para centralizar o texto */
+    }
+    .enem h4{
+        font-size: 3vh;
+        line-height: 3vh;
+        text-align: center; /* Adicionado para centralizar o texto */
+    }
+    .enem{
+        width: 80vw;
+        height: 15vh;
+        margin-top: 3vh;
+        text-align: center; /* Adicionado para centralizar o texto */
+    }
+    .hr1{
+        height: 0.5vh;
+    }
+    .img {
+        width: 20vw;
+        height: 13vh;
+    }
+
+}
